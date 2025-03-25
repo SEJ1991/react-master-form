@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@layer base {
+  html,
+  body {
+    @apply text-white;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex place-items-center;
+  }
+
+  .hovering {
+    @apply transition-transform duration-300 ease-in-out hover:-translate-y-0.5;
+  }
+}
